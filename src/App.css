@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0c0c0c;
+  color: #e8e8e8;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+a {
+  color: #c8a45e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4b36a;
+}
+
+
+
+/* ========== CARD GRID ========== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.card {
+  background: #161616;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: #e8e8e8;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  border-color: rgba(200,164,94,0.3);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #e8e8e8;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #888888;
+}
+
+/* ========== EXPLORE PAGES ========== */
+.explore-hero {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.state-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.state-card:hover {
+  transform: scale(1.02);
+}
+
+.state-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.state-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+
+.state-card-overlay h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.state-card-overlay p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.city-card {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: #e8e8e8;
+  display: block;
+  background: #161616;
+  border: 1px solid #222222;
+}
+
+.city-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(200,164,94,0.3);
+}
+
+.city-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.city-card-info {
+  padding: 14px;
+}
+
+.city-card-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #e8e8e8;
+}
+
+.city-card-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #888888;
+}
+
+/* ========== PLACE DETAIL ========== */
+.detail-hero {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: #161616;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: rgba(200,164,94,0.3);
+}
+
+.info-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 11px;
+  color: #c8a45e;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e8e8e8;
+}
+
+/* ========== INPUTS ========== */
+input {
+  background: #161616 !important;
+  border: 1px solid #333333 !important;
+  color: #e8e8e8 !important;
+  font-family: 'Inter', sans-serif;
+}
+
+input::placeholder {
+  color: #555555 !important;
+}
+
+input:focus {
+  border-color: #c8a45e !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(200,164,94,0.15);
+}
+
+button[type="submit"] {
+  background: #c8a45e !important;
+  border: none;
+  color: #0c0c0c !important;
+  font-weight: 600 !important;
+  transition: background 0.2s ease !important;
+}
+
+button[type="submit"]:hover {
+  background: #d4b36a !important;
+}
+
+/* ========== UTILITIES ========== */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #222222;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c8a45e, #d4b36a);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+/* REMOVE OLD SIDEBAR STYLES - Add this instead */
+.desktop-nav a:hover {
+  color: #c8a45e !important;
+}
+
+.mobile-menu-btn:hover {
+  opacity: 0.8;
+}
+/* --- BEAUTIFUL FAVORITES GRID --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden; /* THIS stops the image from getting huge */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Forces all images to be the same height */
+  object-fit: cover; /* Crops the image perfectly without stretching */
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: var(--text-primary);
+}

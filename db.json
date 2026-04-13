@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "name": "tanuja",
+      "email": "tkornu@gitam.in",
+      "password": "1234567",
+      "joinedDate": "2026-04-12T09:55:24.335Z",
+      "id": "LQ4K_UgQKxk"
+    },
+    {
+      "name": "tanuja",
+      "email": "tanujakornu1902@gmail.com",
+      "password": "654321",
+      "id": "stFShZqGHPo"
+    }
+  ],
+  "favorites": [
+    {
+      "userId": "stFShZqGHPo",
+      "placeId": 602,
+      "placeName": "Mattupetty Dam",
+      "placeImage": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Mattupetty_Dam.jpg",
+      "cityName": "Munnar",
+      "stateName": "Kerala",
+      "id": "6dUrgYq7ob4"
+    },
+    {
+      "userId": "stFShZqGHPo",
+      "placeId": 1308,
+      "placeName": "Bodgeshwar Temple",
+      "placeImage": "https://www.goaholidayhomes.com/goa-information-images/mapusa-bodgeshwar-temple-303-9.jpg",
+      "cityName": "Mapusa",
+      "stateName": "Goa",
+      "id": "oFjDYhwmgxM"
+    }
+  ],
+  "ratings": [],
+  "comments": [
+    {
+      "placeId": 1305,
+      "userId": "stFShZqGHPo",
+      "userName": "tanuja",
+      "text": "u",
+      "date": "2026-04-12",
+      "id": "twUaaBD5Ivk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
