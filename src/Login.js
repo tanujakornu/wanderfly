@@ -11,7 +11,7 @@ function Login({ setUser }) {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('http://localhost:3001/users?email=' + email.trim());
+      const res = await fetch('https://wanderfly-backend.onrender.com/users?email=' + email.trim());
       const users = await res.json();
       if (users.length === 0) { setError('No account found with this email.'); return; }
       if (users[0].password === password) {
