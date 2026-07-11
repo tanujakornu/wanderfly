@@ -233,7 +233,7 @@ body:not(.dark-mode) .nav {
 
 .section-title {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 34px; fontWeight: 400; color: var(--text-primary);
+  font-size: 34px; font-weight: 400; color: var(--text-primary);
   margin-bottom: 16px; line-height: 1.3;
 }
 
