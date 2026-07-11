@@ -12,7 +12,6 @@ function PlaceDetail() {
   var [comments, setComments] = useState([]);
   var [newComment, setNewComment] = useState('');
   var [hoverStar, setHoverStar] = useState(0);
-
   var API = 'https://wanderfly-backend.onrender.com';
 
   useEffect(function() {
