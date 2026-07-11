@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { travelData } from './data';
 import { useToast } from './App';
 
+var API = 'https://wanderfly-backend.onrender.com';
+
 function PlaceDetail() {
   var id = useParams().id;
   var addToast = useToast();
@@ -12,7 +14,6 @@ function PlaceDetail() {
   var [comments, setComments] = useState([]);
   var [newComment, setNewComment] = useState('');
   var [hoverStar, setHoverStar] = useState(0);
-  var API = 'https://wanderfly-backend.onrender.com';
 
   useEffect(function() {
     var saved = localStorage.getItem('currentUser');
