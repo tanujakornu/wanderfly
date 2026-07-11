@@ -164,9 +164,9 @@ function App() {
             </div>
             <div className="footer-col">
               <h4>Connect</h4>
-              <a href="#" onClick={e => e.preventDefault()}>Instagram</a>
-              <a href="#" onClick={e => e.preventDefault()}>Twitter</a>
-              <a href="#" onClick={e => e.preventDefault()}>GitHub</a>
+              <span style={{cursor:'pointer'}}>Instagram</span>
+              <span style={{cursor:'pointer'}}>Twitter</span>
+              <span style={{cursor:'pointer'}}>GitHub</span>
             </div>
           </div>
           <div className="footer-bottom">
